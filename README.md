@@ -28,7 +28,9 @@ Add "ui.multiselect" to your modules list. Then you can use it like follows:
     scroll-after-rows="5"                 // Show scroll bar after 5 rows
     filter-after-rows="5                  // Show filter input after 5 rows
     max-width="100"                       // The maximum width of the multiselect dropdown button
-    tabindex="-1">                        // tabindex setting for dropdown
+    tabindex="-1"						  // tabindex setting for dropdown
+	data-max-selection=2				  // max selection allowed		
+    >                        
 </multiselect>
 ```
 
