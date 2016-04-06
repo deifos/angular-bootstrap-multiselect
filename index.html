@@ -2,7 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
-	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="angular-bootstrap-multiselect.js"></script>
@@ -126,6 +127,19 @@
     data-multiple="true"
 &gt;&lt;/multiselect&gt</pre>
 		<br>
+
+        <h3>Multi select with max selection</h3>
+        <multiselect ng-model="multiselectModel[0]" options="c for c in selectOptions" data-multiple="true" data-max-selection=2></multiselect>
+        <br><br>
+        Model: {{multiselectModel[0]}}
+        <br><br>
+        <pre>&lt;multiselect
+    ng-model="multiselectModel[0]"
+    options="c for c in selectOptions"
+    data-multiple="true"
+    data-max-selection=2
+&gt;&lt;/multiselect&gt</pre>
+        <br>
 
 		<h3>Multi select pre-selection</h3>
 		<multiselect ng-model="multiselectModel[1]" options="c for c in selectOptions" data-multiple="true"></multiselect>
